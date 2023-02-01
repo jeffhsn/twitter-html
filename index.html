@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Twitter-html</title>
+  </head>
+  <body>
+    <main class="container">
+      <!-- left -->
+      <div class="sidebar">
+        <nav class="sidebar__top">
+          <div class="sidebar__logo">
+            <a class="logo__icon" href="#">
+              <i class="uil uil-twitter"></i>
+            </a>
+          </div>
+          <ul class="sidebar__menu">
+            <li class="menu__item">
+              <a class="item__link">
+                <!-- <span><i class="uil uil-estate"></i></span> -->
+                <i class="uis uis-house-user"></i>
+                <span class="active">Home</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="item__link">
+                <i class="uil uil-search"></i>
+                <span>Explore</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="item__link">
+                <i class="uil uil-bell"></i>
+                <span>Notifications</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="item__link">
+                <i class="uil uil-envelope"></i>
+                <span>Messages</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="item__link">
+                <i class="uil uil-bookmark"></i>
+                <span>Bookmarks</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="item__link">
+                <i class="uil uil-clipboard-notes"></i>
+                <span>Lists</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="item__link">
+                <i class="uil uil-user"></i>
+                <span>Profile</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="item__link">
+                <i class="uil uil-ellipsis-h"></i>
+                <span>More</span>
+              </a>
+            </li>
+          </ul>
+          <div class="top__create">
+            <label class="btn btn--primary" for="create__tweet">
+              <i class="uil uil-pen"></i>
+              <p class="btn__text">Tweet</p>
+            </label>
+          </div>
+        </nav>
+
+        <div class="sidebar__bottom">
+          <div href="" class="bottom__profile">
+            <div class="profile__card">
+              <div class="card__image">
+                <div class="profile__photo">
+                  <img src="./assets/jeffhsn-pfp.png" alt="jeffhsn" />
+                </div>
+              </div>
+              <div class="card__handle">
+                <h3>JeffHsn</h3>
+                <p class="text--muted">@JeffHsn_</p>
+              </div>
+              <span class="card__icon text--muted"
+                ><i class="uil uil-ellipsis-h"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- middle -->
+      <div class="feed">
+        <div class="feed__header">
+          <div class="header__profile">
+            <div class="profile__photo">
+              <img src="./assets/jeffhsn-pfp.png" alt="jeffhsn" />
+            </div>
+          </div>
+          <div class="header__content">
+            <h2 class="header__text">Home</h2>
+            <div class="header__icon btn--s">
+              <i class="uil uil-bolt"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="feed__create">
+          <form class="create__tweet">
+            <div class="tweet__profile">
+              <div class="profile__photo">
+                <img src="./assets/jeffhsn-pfp.png" alt="jeffhsn" />
+              </div>
+            </div>
+            <div class="tweet__box">
+              <textarea
+                placeholder="What's happening?"
+                maxlength="5000"
+                id="create__tweet"
+                name="create__tweet"
+              ></textarea>
+              <div class="tweet__actions">
+                <div class="actions__options">
+                  <a href="#" class="option btn--s">
+                    <i class="uil uil-image"></i>
+                  </a>
+                  <a href="#" class="option btn--s">
+                    <i class="uil uil-plus-square"></i>
+                  </a>
+                  <a href="#" class="option btn--s">
+                    <i class="uil uil-question-circle"></i>
+                  </a>
+                  <a href="#" class="option btn--s">
+                    <i class="uil uil-laughing"></i>
+                  </a>
+                  <a href="#" class="option btn--s">
+                    <i class="uil uil-calender"></i>
+                  </a>
+                  <a href="#" class="option btn--s">
+                    <i class="uil uil-location-point"></i>
+                  </a>
+                </div>
+                <input
+                  type="submit"
+                  value="Tweet"
+                  class="btn btn--primary"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="feed__post">
+          <div class="post__card">
+            <div class="card__profile">
+              <div class="profile__photo">
+                <img src="./assets/user-10.jpeg" alt="user" />
+              </div>
+            </div>
+            <div class="card__content">
+              <div class="content__header">
+                <div class="header__author">
+                  <h3 class="author__username">Naruto.eth</h3>
+                  <span class="author__verified"
+                    ><i class="uis uis-check-circle"></i
+                  ></span>
+                  <p class="author__handle text--muted">@ItsNaruto</p>
+                  <span class="text--muted">&#183;</span>
+                  <p class="time text--muted">10s</p>
+                </div>
+                <div class="btn--s">
+                  <span><i class="uil uil-ellipsis-h"></i></span>
+                </div>
+              </div>
+              <div class="content__body">
+                <p>
+                  Just learned about web3 and the decentralized web
+                  and I'm blown away by the potential for greater
+                  security and privacy.
+                  <a class="hashtag" href="#">#web3</a>
+                  <a class="hashtag" href="#">#decentralizedweb</a>
+                </p>
+              </div>
+              <div class="content__attachment">
+                <img src="./assets/web3.jpeg" alt="web3.0" />
+              </div>
+              <div class="content__actions">
+                <div class="action text--muted">
+                  <span class="analytics">
+                    <i class="uil uil-analytics"></i>
+                  </span>
+                  <p>1.252</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-comment"></i>
+                  </span>
+                  <p>126</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-heart"></i>
+                  </span>
+                  <p>525</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-share"></i>
+                  </span>
+                  <p>32</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-bookmark"></i>
+                  </span>
+                  <p>90</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="feed__post">
+          <div class="post__card">
+            <div class="card__profile">
+              <div class="profile__photo">
+                <img src="./assets/user-1.jpeg" alt="user" />
+              </div>
+            </div>
+            <div class="card__content">
+              <div class="content__header">
+                <div class="header__author">
+                  <h3 class="author__username">Enzi.</h3>
+                  <span class="author__verified"
+                    ><i class="uis uis-check-circle"></i
+                  ></span>
+                  <p class="author__handle text--muted">@Enzi</p>
+                  <span class="text--muted">&#183;</span>
+                  <p class="time text--muted">10s</p>
+                </div>
+                <div class="btn--s">
+                  <span><i class="uil uil-ellipsis-h"></i></span>
+                </div>
+              </div>
+              <div class="content__body">
+                <p>
+                  NFTs are revolutionizing the art and collectibles
+                  market. I can't wait to see how they continue to
+                  grow and evolve.
+                  <a class="hashtag" href="#">#nfts</a>
+                  <a class="hashtag" href="#">#collectibles</a>
+                </p>
+              </div>
+              <div class="content__actions">
+                <div class="action text--muted">
+                  <span class="analytics">
+                    <i class="uil uil-analytics"></i>
+                  </span>
+                  <p>4.772</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-comment"></i>
+                  </span>
+                  <p>914</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-heart"></i>
+                  </span>
+                  <p>2427</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-share"></i>
+                  </span>
+                  <p>79</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-bookmark"></i>
+                  </span>
+                  <p>200</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="feed__post">
+          <div class="post__card">
+            <div class="card__profile">
+              <div class="profile__photo">
+                <img src="./assets/user-2.jpeg" alt="user" />
+              </div>
+            </div>
+            <div class="card__content">
+              <div class="content__header">
+                <div class="header__author">
+                  <h3 class="author__username">Harry Potter</h3>
+                  <span class="author__verified"
+                    ><i class="uis uis-check-circle"></i
+                  ></span>
+                  <p class="author__handle text--muted">
+                    @HarryPotter
+                  </p>
+                  <span class="text--muted">&#183;</span>
+                  <p class="time text--muted">10s</p>
+                </div>
+                <div class="btn--s">
+                  <span><i class="uil uil-ellipsis-h"></i></span>
+                </div>
+              </div>
+              <div class="content__body">
+                <p>
+                  AI is getting smarter every day. It's amazing to see
+                  how it's being used in everything from healthcare to
+                  transportation.
+                  <a class="hashtag" href="#">#AI</a>
+                  <a class="hashtag" href="#">#technology</a>
+                </p>
+              </div>
+              <div class="content__attachment">
+                <img
+                  src="./assets/aitransport.jpg"
+                  alt="the city of the future"
+                />
+              </div>
+              <div class="content__actions">
+                <div class="action text--muted">
+                  <span class="analytics">
+                    <i class="uil uil-analytics"></i>
+                  </span>
+                  <p>8.423</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-comment"></i>
+                  </span>
+                  <p>1.549</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-heart"></i>
+                  </span>
+                  <p>5.244</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-share"></i>
+                  </span>
+                  <p>976</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-bookmark"></i>
+                  </span>
+                  <p>3.252</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="feed__post">
+          <div class="post__card">
+            <div class="card__profile">
+              <div class="profile__photo">
+                <img src="./assets/user-3.jpeg" alt="user" />
+              </div>
+            </div>
+            <div class="card__content">
+              <div class="content__header">
+                <div class="header__author">
+                  <h3 class="author__username">3space</h3>
+                  <span class="author__verified"
+                    ><i class="uis uis-check-circle"></i
+                  ></span>
+                  <p class="author__handle text--muted">@3space</p>
+                  <span class="text--muted">&#183;</span>
+                  <p class="time text--muted">10s</p>
+                </div>
+                <div class="btn--s">
+                  <span><i class="uil uil-ellipsis-h"></i></span>
+                </div>
+              </div>
+              <div class="content__body">
+                <p>
+                  Web development is constantly evolving and I'm
+                  loving learning about all the new tools and
+                  technologies.
+                  <a class="hashtag" href="#">#webdevelopment</a>
+                  <a class="hashtag" href="#">#coding</a>
+                </p>
+              </div>
+              <div class="content__actions">
+                <div class="action text--muted">
+                  <span class="analytics">
+                    <i class="uil uil-analytics"></i>
+                  </span>
+                  <p>10.5k</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-comment"></i>
+                  </span>
+                  <p>1.129</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-heart"></i>
+                  </span>
+                  <p>5.735</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-share"></i>
+                  </span>
+                  <p>518</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-bookmark"></i>
+                  </span>
+                  <p>4.206</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="feed__post">
+          <div class="post__card">
+            <div class="card__profile">
+              <div class="profile__photo">
+                <img src="./assets/user-4.jpeg" alt="user" />
+              </div>
+            </div>
+            <div class="card__content">
+              <div class="content__header">
+                <div class="header__author">
+                  <h3 class="author__username">Lukesmart</h3>
+                  <span class="author__verified"
+                    ><i class="uis uis-check-circle"></i
+                  ></span>
+                  <p class="author__handle text--muted">
+                    @ssmartlukess
+                  </p>
+                  <span class="text--muted">&#183;</span>
+                  <p class="time text--muted">10s</p>
+                </div>
+                <div class="btn--s">
+                  <span><i class="uil uil-ellipsis-h"></i></span>
+                </div>
+              </div>
+              <div class="content__body">
+                <p>
+                  The future of ecommerce is looking bright with the
+                  rise of personalized shopping experiences and
+                  virtual reality.
+                  <a class="hashtag" href="#">#ecommerce</a>
+                  <a class="hashtag" href="#">#future</a>
+                </p>
+              </div>
+              <div class="content__actions">
+                <div class="action text--muted">
+                  <span class="analytics">
+                    <i class="uil uil-analytics"></i>
+                  </span>
+                  <p>24.9K</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-comment"></i>
+                  </span>
+                  <p>2.156</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-heart"></i>
+                  </span>
+                  <p>7.745</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-share"></i>
+                  </span>
+                  <p>1.241</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-bookmark"></i>
+                  </span>
+                  <p>10.3k</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="feed__post">
+          <div class="post__card">
+            <div class="card__profile">
+              <div class="profile__photo">
+                <img src="./assets/user-5.jpeg" alt="user" />
+              </div>
+            </div>
+            <div class="card__content">
+              <div class="content__header">
+                <div class="header__author">
+                  <h3 class="author__username">Goku.x</h3>
+                  <span class="author__verified"
+                    ><i class="uis uis-check-circle"></i
+                  ></span>
+                  <p class="author__handle text--muted">@IamGoku</p>
+                  <span class="text--muted">&#183;</span>
+                  <p class="time text--muted">10s</p>
+                </div>
+                <div class="btn--s">
+                  <span><i class="uil uil-ellipsis-h"></i></span>
+                </div>
+              </div>
+              <div class="content__body">
+                <p>
+                  RIP Maradona... Best football player in history!
+                  <a class="hashtag" href="#">#football</a>
+                  <a class="hashtag" href="#">#notsoccer</a>
+                </p>
+              </div>
+              <div class="content__attachment">
+                <img
+                  src="./assets/maradona.jpg"
+                  alt="the city of the future"
+                />
+              </div>
+              <div class="content__actions">
+                <div class="action text--muted">
+                  <span class="analytics">
+                    <i class="uil uil-analytics"></i>
+                  </span>
+                  <p>7.215</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-comment"></i>
+                  </span>
+                  <p>842</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-heart"></i>
+                  </span>
+                  <p>2.248</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-share"></i>
+                  </span>
+                  <p>92</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-bookmark"></i>
+                  </span>
+                  <p>5222</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="feed__post">
+          <div class="post__card">
+            <div class="card__profile">
+              <div class="profile__photo">
+                <img src="./assets/user-6.jpeg" alt="user" />
+              </div>
+            </div>
+            <div class="card__content">
+              <div class="content__header">
+                <div class="header__author">
+                  <h3 class="author__username">Cristiano Messi</h3>
+                  <span class="author__verified"
+                    ><i class="uis uis-check-circle"></i
+                  ></span>
+                  <p class="author__handle text--muted">
+                    @CristianoMessi
+                  </p>
+                  <span class="text--muted">&#183;</span>
+                  <p class="time text--muted">10s</p>
+                </div>
+                <div class="btn--s">
+                  <span><i class="uil uil-ellipsis-h"></i></span>
+                </div>
+              </div>
+              <div class="content__body">
+                <p>
+                  Prossima fermata... Egitto!! Non vedo l'ora!
+                  <a class="hashtag" href="#">#travel</a>
+                  <a class="hashtag" href="#">#Egitto</a>
+                </p>
+              </div>
+              <div class="content__attachment">
+                <img
+                  src="./assets/travel.jpg"
+                  alt="the city of the future"
+                />
+              </div>
+              <div class="content__actions">
+                <div class="action text--muted">
+                  <span class="analytics">
+                    <i class="uil uil-analytics"></i>
+                  </span>
+                  <p>6.524</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-comment"></i>
+                  </span>
+                  <p>997</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-heart"></i>
+                  </span>
+                  <p>3.111</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-share"></i>
+                  </span>
+                  <p>770</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-bookmark"></i>
+                  </span>
+                  <p>3.533</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="feed__post">
+          <div class="post__card">
+            <div class="card__profile">
+              <div class="profile__photo">
+                <img src="./assets/user-8.jpeg" alt="user" />
+              </div>
+            </div>
+            <div class="card__content">
+              <div class="content__header">
+                <div class="header__author">
+                  <h3 class="author__username">SupermarioME</h3>
+                  <span class="author__verified"
+                    ><i class="uis uis-check-circle"></i
+                  ></span>
+                  <p class="author__handle text--muted">
+                    @itsmemaaaaario
+                  </p>
+                  <span class="text--muted">&#183;</span>
+                  <p class="time text--muted">10s</p>
+                </div>
+                <div class="btn--s">
+                  <span><i class="uil uil-ellipsis-h"></i></span>
+                </div>
+              </div>
+              <div class="content__body">
+                <p>
+                  I'm excited to see how AI and machine learning will
+                  continue to shape and improve industries in the
+                  future.
+                  <a class="hashtag" href="#">#AI</a>
+                  <a class="hashtag" href="#">#machinelearning</a>
+                </p>
+              </div>
+              <div class="content__actions">
+                <div class="action text--muted">
+                  <span class="analytics">
+                    <i class="uil uil-analytics"></i>
+                  </span>
+                  <p>5.553</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-comment"></i>
+                  </span>
+                  <p>512</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-heart"></i>
+                  </span>
+                  <p>989</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-share"></i>
+                  </span>
+                  <p>45</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-bookmark"></i>
+                  </span>
+                  <p>1.299</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="feed__post">
+          <div class="post__card">
+            <div class="card__profile">
+              <div class="profile__photo">
+                <img src="./assets/user-9.jpeg" alt="user" />
+              </div>
+            </div>
+            <div class="card__content">
+              <div class="content__header">
+                <div class="header__author">
+                  <h3 class="author__username">Itachi.eth</h3>
+                  <span class="author__verified"
+                    ><i class="uis uis-check-circle"></i
+                  ></span>
+                  <p class="author__handle text--muted">
+                    @ItachiUchiha
+                  </p>
+                  <span class="text--muted">&#183;</span>
+                  <p class="time text--muted">10s</p>
+                </div>
+                <div class="btn--s">
+                  <span><i class="uil uil-ellipsis-h"></i></span>
+                </div>
+              </div>
+              <div class="content__body">
+                <p>
+                  Web development is such a rewarding career. There's
+                  always something new to learn and create.
+                  <a class="hashtag" href="#">#webdevelopment</a>
+                  <a class="hashtag" href="#">#coding</a>
+                </p>
+              </div>
+              <div class="content__actions">
+                <div class="action text--muted">
+                  <span class="analytics">
+                    <i class="uil uil-analytics"></i>
+                  </span>
+                  <p>9.277</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-comment"></i>
+                  </span>
+                  <p>1.337</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-heart"></i>
+                  </span>
+                  <p>6.664</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-share"></i>
+                  </span>
+                  <p>700</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-bookmark"></i>
+                  </span>
+                  <p>3.900</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="feed__post">
+          <div class="post__card">
+            <div class="card__profile">
+              <div class="profile__photo">
+                <img src="./assets/user-16.jpeg" alt="user" />
+              </div>
+            </div>
+            <div class="card__content">
+              <div class="content__header">
+                <div class="header__author">
+                  <h3 class="author__username">Programmer.eth</h3>
+                  <span class="author__verified"
+                    ><i class="uis uis-check-circle"></i
+                  ></span>
+                  <p class="author__handle text--muted">
+                    @KeepCalmAndCode
+                  </p>
+                  <span class="text--muted">&#183;</span>
+                  <p class="time text--muted">10s</p>
+                </div>
+                <div class="btn--s">
+                  <span><i class="uil uil-ellipsis-h"></i></span>
+                </div>
+              </div>
+              <div class="content__body">
+                <p>
+                  The future of technology is limitless. I can't wait
+                  to see what amazing innovations are coming next.
+                  <a class="hashtag" href="#">#technology</a>
+                  <a class="hashtag" href="#">#future</a>
+                </p>
+              </div>
+              <div class="content__actions">
+                <div class="action text--muted">
+                  <span class="analytics">
+                    <i class="uil uil-analytics"></i>
+                  </span>
+                  <p>14.8k</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-comment"></i>
+                  </span>
+                  <p>1.857</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-heart"></i>
+                  </span>
+                  <p>6.122</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-share"></i>
+                  </span>
+                  <p>2.444</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-bookmark"></i>
+                  </span>
+                  <p>10.1k</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="feed__post">
+          <div class="post__card">
+            <div class="card__profile">
+              <div class="profile__photo">
+                <img src="./assets/user-17.jpeg" alt="user" />
+              </div>
+            </div>
+            <div class="card__content">
+              <div class="content__header">
+                <div class="header__author">
+                  <h3 class="author__username">Flacko</h3>
+                  <span class="author__verified"
+                    ><i class="uis uis-check-circle"></i
+                  ></span>
+                  <p class="author__handle text--muted">@Flacko</p>
+                  <span class="text--muted">&#183;</span>
+                  <p class="time text--muted">10s</p>
+                </div>
+                <div class="btn--s">
+                  <span><i class="uil uil-ellipsis-h"></i></span>
+                </div>
+              </div>
+              <div class="content__body">
+                <p>
+                  Just started learning <a>#React</a> and
+                  <a>#NextJS</a> and I'm loving it! The developer
+                  experience is top-notch and the performance
+                  improvements are a game-changer.
+                  <a class="hashtag" href="#">#javascript</a>
+                  <a class="hashtag" href="#">#webdevelopment</a>
+                </p>
+              </div>
+              <div class="content__actions">
+                <div class="action text--muted">
+                  <span class="analytics">
+                    <i class="uil uil-analytics"></i>
+                  </span>
+                  <p>256</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-comment"></i>
+                  </span>
+                  <p>97</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-heart"></i>
+                  </span>
+                  <p>154</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-share"></i>
+                  </span>
+                  <p>3</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-bookmark"></i>
+                  </span>
+                  <p>44</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="feed__post">
+          <div class="post__card">
+            <div class="card__profile">
+              <div class="profile__photo">
+                <img src="./assets/user-13.jpeg" alt="user" />
+              </div>
+            </div>
+            <div class="card__content">
+              <div class="content__header">
+                <div class="header__author">
+                  <h3 class="author__username">Scoobydoo.crypto</h3>
+                  <span class="author__verified"
+                    ><i class="uis uis-check-circle"></i
+                  ></span>
+                  <p class="author__handle text--muted">
+                    @Scoobydoobydoo
+                  </p>
+                  <span class="text--muted">&#183;</span>
+                  <p class="time text--muted">10s</p>
+                </div>
+                <div class="btn--s">
+                  <span><i class="uil uil-ellipsis-h"></i></span>
+                </div>
+              </div>
+              <div class="content__body">
+                <p>📸🌩</p>
+              </div>
+              <div class="content__attachment">
+                <img
+                  src="./assets/thunder.jpg"
+                  alt="the city of the future"
+                />
+              </div>
+              <div class="content__actions">
+                <div class="action text--muted">
+                  <span class="analytics">
+                    <i class="uil uil-analytics"></i>
+                  </span>
+                  <p>1.888</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-comment"></i>
+                  </span>
+                  <p>766</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-heart"></i>
+                  </span>
+                  <p>1.577</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-share"></i>
+                  </span>
+                  <p>98</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-bookmark"></i>
+                  </span>
+                  <p>2.423</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="feed__post">
+          <div class="post__card">
+            <div class="card__profile">
+              <div class="profile__photo">
+                <img src="./assets/user-14.jpeg" alt="user" />
+              </div>
+            </div>
+            <div class="card__content">
+              <div class="content__header">
+                <div class="header__author">
+                  <h3 class="author__username">Looost.</h3>
+                  <span class="author__verified"
+                    ><i class="uis uis-check-circle"></i
+                  ></span>
+                  <p class="author__handle text--muted">@Lost123</p>
+                  <span class="text--muted">&#183;</span>
+                  <p class="time text--muted">10s</p>
+                </div>
+                <div class="btn--s">
+                  <span><i class="uil uil-ellipsis-h"></i></span>
+                </div>
+              </div>
+              <div class="content__body">
+                <p>
+                  Just finished building my first smart contract on
+                  <a>#Ethereum</a> using <a>#Solidity</a> and I'm
+                  blown away by the power and potential of
+                  decentralized applications! Excited to explore more
+                  of what this technology has to offer.
+                  <a class="hashtag" href="#">#blockchain</a>
+                  <a class="hashtag" href="#">#dapps</a>
+                </p>
+              </div>
+              <div class="content__actions">
+                <div class="action text--muted">
+                  <span class="analytics">
+                    <i class="uil uil-analytics"></i>
+                  </span>
+                  <p>12.4k</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-comment"></i>
+                  </span>
+                  <p>6.344</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-heart"></i>
+                  </span>
+                  <p>7.449</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-share"></i>
+                  </span>
+                  <p>1.788</p>
+                </div>
+                <div class="action text--muted">
+                  <span class="btn--s">
+                    <i class="uil uil-bookmark"></i>
+                  </span>
+                  <p>11.7k</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- last post -->
+
+        <!-- mobile nav -->
+        <div class="feed__btn">
+          <label class="btn btn--primary" for="create__tweet">
+            <i class="uil uil-pen"></i>
+            <p class="btn__text">Tweet</p>
+          </label>
+        </div>
+        <nav class="feed__nav">
+          <ul class="nav">
+            <li class="nav__item">
+              <a class="nav__link"
+                ><i class="uis uis-house-user"></i
+              ></a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link"><i class="uil uil-search"></i></a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link"><i class="uil uil-bell"></i></a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link"
+                ><i class="uil uil-envelope"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- right -->
+      <div class="widgets">
+        <div class="widgets__search">
+          <div class="search__box">
+            <span><i class="uil uil-search"></i></span>
+            <input type="text" placeholder="Search Twitter" />
+          </div>
+        </div>
+
+        <div class="widgets__trends">
+          <h2 class="trends__title">Trends for you</h2>
+          <div class="trends__card">
+            <div class="card__info">
+              <p class="info__category text--muted">
+                Business & finance
+              </p>
+              <h3 class="info__title">Ethereum</h3>
+              <p class="info__stats text--muted">61.5K Tweets</p>
+            </div>
+            <div class="btn--s">
+              <span class="text--muted"
+                ><i class="uil uil-ellipsis-h"></i
+              ></span>
+            </div>
+          </div>
+          <div class="trends__card">
+            <div class="card__info">
+              <p class="info__category text--muted">Trending</p>
+              <h3 class="info__title">#NextJs</h3>
+              <p class="info__stats text--muted">7.500 Tweets</p>
+            </div>
+            <div class="btn--s">
+              <span class="text--muted"
+                ><i class="uil uil-ellipsis-h"></i
+              ></span>
+            </div>
+          </div>
+          <div class="trends__card">
+            <div class="card__info">
+              <p class="info__category text--muted">Technology</p>
+              <h3 class="info__title">#webdevelopment</h3>
+              <p class="info__stats text--muted">1.712</p>
+            </div>
+            <div class="btn--s">
+              <span class="text--muted"
+                ><i class="uil uil-ellipsis-h"></i
+              ></span>
+            </div>
+          </div>
+          <div class="trends__card">
+            <div class="card__info">
+              <p class="info__category text--muted">Sports</p>
+              <h3 class="info__title">Barcelona</h3>
+              <p class="info__stats text--muted">71.3K Tweets</p>
+            </div>
+            <div class="btn--s">
+              <span class="text--muted"
+                ><i class="uil uil-ellipsis-h"></i
+              ></span>
+            </div>
+          </div>
+          <div class="trends__card">
+            <div class="card__info">
+              <p class="info__category text--muted">Technology</p>
+              <h3 class="info__title">#React Native</h3>
+              <p class="info__stats text--muted">7.898 Tweets</p>
+            </div>
+            <div class="btn--s">
+              <span class="text--muted"
+                ><i class="uil uil-ellipsis-h"></i
+              ></span>
+            </div>
+          </div>
+          <div class="trends__card">
+            <div class="card__info">
+              <p class="info__category text--muted">Trending</p>
+              <h3 class="info__title">#OpenAI</h3>
+              <p class="info__stats text--muted">13.8k Tweets</p>
+            </div>
+            <div class="btn--s">
+              <span class="text--muted"
+                ><i class="uil uil-ellipsis-h"></i
+              ></span>
+            </div>
+          </div>
+          <div class="trends__card">
+            <div class="card__info">
+              <p class="info__category text--muted">
+                Business & finance
+              </p>
+              <h3 class="info__title">#Bitcoin</h3>
+              <p class="info__stats text--muted">82.5k Tweets</p>
+            </div>
+            <div class="btn--s">
+              <span class="text--muted"
+                ><i class="uil uil-ellipsis-h"></i
+              ></span>
+            </div>
+          </div>
+          <div class="trends__card">
+            <div class="card__info">
+              <p class="info__category text--muted">Technology</p>
+              <h3 class="info__title">#Typescript</h3>
+              <p class="info__stats text--muted">9.8k Tweets</p>
+            </div>
+            <div class="btn--s">
+              <span class="text--muted"
+                ><i class="uil uil-ellipsis-h"></i
+              ></span>
+            </div>
+          </div>
+          <div class="trends__card">
+            <div class="card__info">
+              <p class="info__category text--muted">Trending</p>
+              <h3 class="info__title">#SaaS</h3>
+              <p class="info__stats text--muted">11.1k Tweets</p>
+            </div>
+            <div class="btn--s">
+              <span class="text--muted"
+                ><i class="uil uil-ellipsis-h"></i
+              ></span>
+            </div>
+          </div>
+          <div class="trends__card">
+            <div class="card__info">
+              <p class="info__category text--muted">
+                Business & finance
+              </p>
+              <h3 class="info__title">#cryptocurrency</h3>
+              <p class="info__stats text--muted">67.8k Tweets</p>
+            </div>
+            <div class="btn--s">
+              <span class="text--muted"
+                ><i class="uil uil-ellipsis-h"></i
+              ></span>
+            </div>
+          </div>
+          <div class="trends__more">
+            <a href="#" class="more">Show More</a>
+          </div>
+        </div>
+
+        <div class="widgets__suggestions">
+          <h2 class="suggestions__title">Who to follow</h2>
+          <div class="suggestions__card">
+            <div class="card__image">
+              <div class="profile__photo">
+                <img src="./assets/user-9.jpeg" alt="Lebanon" />
+              </div>
+            </div>
+            <div class="card__handle">
+              <h3>Itachi.eth</h3>
+              <p class="text--muted">@ItachiUchiha</p>
+            </div>
+            <a class="btn btn--black">Follow</a>
+          </div>
+          <div class="suggestions__card">
+            <div class="card__image">
+              <div class="profile__photo">
+                <img src="./assets/user-7.jpeg" alt="Palestine" />
+              </div>
+            </div>
+            <div class="card__handle">
+              <h3>Kinder.x</h3>
+              <p class="text--muted">@Ppenguinss</p>
+            </div>
+            <a class="btn btn--black">Follow</a>
+          </div>
+          <div class="suggestions__card">
+            <div class="card__image">
+              <div class="profile__photo">
+                <img src="./assets/user-10.jpeg" alt="Italy" />
+              </div>
+            </div>
+            <div class="card__handle">
+              <h3>Naruto.eth</h3>
+              <p class="text--muted">@ItsNaruto</p>
+            </div>
+            <a class="btn btn--black">Follow</a>
+          </div>
+          <div class="suggestions__more">
+            <a href="#" class="more">Show More</a>
+          </div>
+        </div>
+
+        <div class="widgets__footer">
+          <a class="text--muted" href="#">Terms of Service</a>
+          <a class="text--muted" href="#">Privacy Policy</a>
+          <a class="text--muted" href="#">Cookie Policy</a>
+          <a class="text--muted" href="#">Imprint</a>
+          <a class="text--muted" href="#">Accessibility</a>
+          <a class="text--muted" href="#">Ads Info</a>
+          <a class="text--muted" href="#">More...</a>
+          <span class="text--muted">&copy; 2022 Twitter, Inc.</span>
+        </div>
+      </div>
+
+      <!-- CUSTOMIZE THEME -->
+      <!-- <div class="theme__customization">
+        <div class="customization__card">
+          <h2>Customize your view</h2>
+          <p>Manage your font size, color, and background.</p> -->
+
+      <!-- font size -->
+      <!-- <div class="card__font">
+            <h4>Font Size</h4>
+            <div>
+              <h6>Aa</h6>
+              <div class="font__size">
+                <span class="font__size--1"></span>
+                <span class="font__size--2 active"></span>
+                <span class="font__size--3"></span>
+                <span class="font__size--4"></span>
+                <span class="font__size--5"></span>
+              </div>
+              <h3>Aa</h3>
+            </div>
+          </div> -->
+
+      <!-- primary color -->
+      <!-- <div class="card__color">
+            <h4>Color</h4>
+            <div class="color__choice">
+              <span class="color__choice--1 active"></span>
+              <span class="color__choice--2"></span>
+              <span class="color__choice--3"></span>
+              <span class="color__choice--4"></span>
+              <span class="color__choice--5"></span>
+              <span class="color__choice--6"></span>
+            </div>
+          </div> -->
+
+      <!-- background colors -->
+      <!-- <div class="card__bg">
+            <h4>Background</h4>
+            <div class="bg__choice">
+              <div class="bg__choice--1 active">
+                <span></span>
+                <h5 for="bg__choice--1">Light</h5>
+              </div>
+              <div class="bg__choice--2">
+                <span></span>
+                <h5 for="bg__choice--2">Dim</h5>
+              </div>
+              <div class="bg__choice--3">
+                <span></span>
+                <h5 for="bg__choice--3">Lights Out</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </main>
+  </body>
+</html>
